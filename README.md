@@ -54,6 +54,32 @@ source("scripts/05_efa.R")
 source("scripts/06_cfa.R")
 source("scripts/07_rasch_analysis.R")
 
-```r
 
-## Raw participant-level data are not included in this repository because they contain human-subjects survey responses. This project uses simulated data with the same structure as the original AMPERE validation dataset.
+---
+
+# 5. Scripts: what each file does
+
+## `00_generate_simulated_data.R`
+
+Creates fake AMPERE-style data.
+
+Purpose:
+- protect real participants
+- allow recruiters to run your code
+- show reproducibility
+
+Includes:
+- AMPERE_1 to AMPERE_20
+- MPS items
+- APSR items
+- MIDC items
+- demographics
+
+---
+
+## `01_data_dictionary.R`
+
+Creates:
+
+```text
+docs/data_dictionary.csv
